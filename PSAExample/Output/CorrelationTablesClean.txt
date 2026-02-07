@@ -1,0 +1,23 @@
+Call:corr.test(x = .)
+Correlation matrix 
+         psa lpsa cavol   wt  age   bph cappen
+psa     1.00 0.72  0.62 0.15 0.02 -0.01   0.55
+lpsa    0.72 1.00  0.66 0.38 0.17  0.16   0.52
+cavol   0.62 0.66  1.00 0.18 0.04 -0.13   0.69
+wt      0.15 0.38  0.18 1.00 0.36  0.56   0.14
+age     0.02 0.17  0.04 0.36 1.00  0.37   0.10
+bph    -0.01 0.16 -0.13 0.56 0.37  1.00  -0.08
+cappen  0.55 0.52  0.69 0.14 0.10 -0.08   1.00
+Sample Size 
+[1] 96
+Probability values (Entries above the diagonal are adjusted for multiple tests.) 
+        psa lpsa cavol   wt  age  bph cappen
+psa    0.00 0.00  0.00 1.00 1.00 1.00      0
+lpsa   0.00 0.00  0.00 0.00 0.96 1.00      0
+cavol  0.00 0.00  0.00 0.93 1.00 1.00      0
+wt     0.14 0.00  0.08 0.00 0.00 0.00      1
+age    0.86 0.10  0.70 0.00 0.00 0.00      1
+bph    0.90 0.11  0.22 0.00 0.00 0.00      1
+cappen 0.00 0.00  0.00 0.18 0.33 0.45      0
+
+ To see confidence intervals of the correlations, print with the short=FALSE option

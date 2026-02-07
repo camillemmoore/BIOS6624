@@ -1,0 +1,92 @@
+
+Call:
+lm(formula = lpsa ~ cavol + cappen, data = psaclean2)
+
+Coefficients:
+(Intercept)        cavol       cappen  
+    1.80677      0.08403      0.03684  
+
+
+Call:
+lm(formula = lpsa ~ cavol + cappen, data = psaclean2)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.2831 -0.6616  0.1365  0.5766  2.0009 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  1.80677    0.12043  15.003  < 2e-16 ***
+cavol        0.08403    0.01578   5.325 6.97e-07 ***
+cappen       0.03684    0.03284   1.122    0.265    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.8776 on 93 degrees of freedom
+Multiple R-squared:  0.4384,	Adjusted R-squared:  0.4263 
+F-statistic:  36.3 on 2 and 93 DF,  p-value: 2.226e-12
+
+                  2.5 %    97.5 %
+(Intercept)  1.56762741 2.0459218
+cavol        0.05269630 0.1153668
+cappen      -0.02836424 0.1020508
+
+Call:
+lm(formula = lpsa ~ cappen, data = psaclean2)
+
+Coefficients:
+(Intercept)       cappen  
+     2.1256       0.1578  
+
+
+Call:
+lm(formula = lpsa ~ cappen, data = psaclean2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.55485 -0.69228  0.01384  0.66940  2.60359 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  2.12560    0.11873  17.903  < 2e-16 ***
+cappen       0.15777    0.02695   5.854 6.98e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.9972 on 94 degrees of freedom
+Multiple R-squared:  0.2672,	Adjusted R-squared:  0.2594 
+F-statistic: 34.27 on 1 and 94 DF,  p-value: 6.984e-08
+
+                2.5 %    97.5 %
+(Intercept) 1.8898654 2.3613415
+cappen      0.1042618 0.2112836
+
+Call:
+lm(formula = lpsa ~ cavol, data = psaclean2)
+
+Coefficients:
+(Intercept)        cavol  
+    1.80393      0.09628  
+
+
+Call:
+lm(formula = lpsa ~ cavol, data = psaclean2)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.2871 -0.6593  0.1525  0.5796  1.9610 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  1.80393    0.12057  14.962  < 2e-16 ***
+cavol        0.09628    0.01141   8.435 3.87e-13 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.8788 on 94 degrees of freedom
+Multiple R-squared:  0.4308,	Adjusted R-squared:  0.4248 
+F-statistic: 71.15 on 1 and 94 DF,  p-value: 3.872e-13
+
+                 2.5 %    97.5 %
+(Intercept) 1.56454230 2.0433218
+cavol       0.07361318 0.1189377

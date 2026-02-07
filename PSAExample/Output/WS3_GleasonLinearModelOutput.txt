@@ -1,0 +1,40 @@
+
+Call:
+lm(formula = lpsa ~ gleason, data = psaclean2)
+
+Coefficients:
+(Intercept)     gleason7     gleason8  
+     1.8657       0.5204       1.7591  
+
+
+Call:
+lm(formula = lpsa ~ gleason, data = psaclean2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.54621 -0.59562 -0.00542  0.59396  2.16434 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   1.8657     0.1715  10.876  < 2e-16 ***
+gleason7      0.5204     0.2265   2.297   0.0239 *  
+gleason8      1.7591     0.2725   6.455 4.85e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.9704 on 93 degrees of freedom
+Multiple R-squared:  0.3134,	Adjusted R-squared:  0.2987 
+F-statistic: 21.23 on 2 and 93 DF,  p-value: 2.548e-08
+
+                 2.5 %    97.5 %
+(Intercept) 1.52502184 2.2063088
+gleason7    0.07049249 0.9702521
+gleason8    1.21793390 2.3002606
+Analysis of Variance Table
+
+Response: lpsa
+          Df Sum Sq Mean Sq F value    Pr(>F)    
+gleason    2 39.976 19.9878  21.227 2.548e-08 ***
+Residuals 93 87.571  0.9416                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

@@ -1,0 +1,48 @@
+
+Call:
+lm(formula = lpsa ~ cavol + wt + age + bph + cappen + svi + grade7 + 
+    grade8, data = psaclean2)
+
+Coefficients:
+(Intercept)        cavol           wt          age          bph       cappen          svi  
+   1.453036     0.063514     0.009864    -0.005926     0.061391    -0.025189     0.781355  
+     grade7       grade8  
+   0.298332     0.696459  
+
+
+Call:
+lm(formula = lpsa ~ cavol + wt + age + bph + cappen + svi + grade7 + 
+    grade8, data = psaclean2)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.8642 -0.4418  0.0473  0.5378  1.5950 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  1.453036   0.715017   2.032  0.04519 *  
+cavol        0.063514   0.015367   4.133 8.21e-05 ***
+wt           0.009864   0.005299   1.862  0.06604 .  
+age         -0.005926   0.011786  -0.503  0.61636    
+bph          0.061391   0.033696   1.822  0.07191 .  
+cappen      -0.025189   0.032652  -0.771  0.44254    
+svi          0.781355   0.267690   2.919  0.00447 ** 
+grade7       0.298332   0.186813   1.597  0.11390    
+grade8       0.696459   0.264680   2.631  0.01006 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.7628 on 87 degrees of freedom
+Multiple R-squared:  0.6031,	Adjusted R-squared:  0.5666 
+F-statistic: 16.53 on 8 and 87 DF,  p-value: 1.254e-14
+
+                    2.5 %     97.5 %
+(Intercept)  0.0318625322 2.87420892
+cavol        0.0329710470 0.09405660
+wt          -0.0006679069 0.02039504
+age         -0.0293530587 0.01750011
+bph         -0.0055839315 0.12836628
+cappen      -0.0900875155 0.03971042
+svi          0.2492927780 1.31341729
+grade7      -0.0729795311 0.66964427
+grade8       0.1703797053 1.22253876

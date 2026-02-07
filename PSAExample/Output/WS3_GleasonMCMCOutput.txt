@@ -1,0 +1,61 @@
+# A tibble: 4 × 7
+  Parameter Estimate     MCSE Std_Dev HPDI_2.5 HPDI_97.5    ESS
+  <chr>        <dbl>    <dbl>   <dbl>    <dbl>     <dbl>  <dbl>
+1 beta[1]      1.87  0.000815  0.174    1.53       2.21  45189.
+2 beta[2]      0.521 0.00108   0.230    0.0672     0.966 47450.
+3 beta[3]      1.76  0.00121   0.276    1.22       2.31  51319.
+4 sigma        0.984 0.000273  0.0734   0.845      1.13  73627.
+[1] 271.7006
+
+Computed from 100000 by 96 log-likelihood matrix.
+
+          Estimate   SE
+elpd_waic   -136.0  7.3
+p_waic         4.0  0.7
+waic         271.9 14.6
+
+Computed from 100000 by 96 log-likelihood matrix.
+
+         Estimate   SE
+elpd_loo   -136.0  7.3
+p_loo         4.0  0.7
+looic       272.0 14.6
+------
+MCSE of elpd_loo is 0.0.
+MCSE and ESS estimates assume independent draws (r_eff=1).
+
+All Pareto k estimates are good (k < 0.7).
+See help('pareto-k-diagnostic') for details.
+Checking sampler transitions treedepth.
+Treedepth satisfactory for all transitions.
+
+Checking sampler transitions for divergences.
+No divergent transitions found.
+
+Checking E-BFMI - sampler transitions HMC potential energy.
+E-BFMI satisfactory.
+
+Rank-normalized split effective sample size satisfactory for all parameters.
+
+Rank-normalized split R-hat values satisfactory for all parameters.
+
+Processing complete, no problems detected.
+$status
+[1] 0
+
+$stdout
+[1] "Checking sampler transitions treedepth.\nTreedepth satisfactory for all transitions.\n\nChecking sampler transitions for divergences.\nNo divergent transitions found.\n\nChecking E-BFMI - sampler transitions HMC potential energy.\nE-BFMI satisfactory.\n\nRank-normalized split effective sample size satisfactory for all parameters.\n\nRank-normalized split R-hat values satisfactory for all parameters.\n\nProcessing complete, no problems detected.\n"
+
+$stderr
+[1] ""
+
+$timeout
+[1] FALSE
+
+# A tibble: 4 × 10
+  variable  mean median     sd    mad    q5   q95  rhat ess_bulk ess_tail
+  <chr>    <dbl>  <dbl>  <dbl>  <dbl> <dbl> <dbl> <dbl>    <dbl>    <dbl>
+1 beta[1]  1.87   1.86  0.174  0.173  1.58  2.15   1.00   45212.   56048.
+2 beta[2]  0.521  0.521 0.230  0.228  0.142 0.897  1.00   47512.   59998.
+3 beta[3]  1.76   1.76  0.276  0.275  1.31  2.21   1.00   51340.   59536.
+4 sigma    0.984  0.979 0.0734 0.0725 0.871 1.11   1.00   73656.   66855.
