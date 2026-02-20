@@ -1,0 +1,68 @@
+
+Call:
+lm(formula = lpsa ~ cavol + svi + cavolsviint, data = psaclean2)
+
+Coefficients:
+(Intercept)        cavol          svi  cavolsviint  
+    1.66242      0.10250      1.33090     -0.05644  
+
+
+Call:
+lm(formula = lpsa ~ cavol + svi + cavolsviint, data = psaclean2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.14906 -0.53304  0.08121  0.56401  1.66625 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  1.66242    0.13079  12.711  < 2e-16 ***
+cavol        0.10250    0.01923   5.329 6.98e-07 ***
+svi          1.33090    0.36101   3.687 0.000384 ***
+cavolsviint -0.05644    0.02642  -2.136 0.035319 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.827 on 92 degrees of freedom
+Multiple R-squared:  0.5067,	Adjusted R-squared:  0.4906 
+F-statistic:  31.5 on 3 and 92 DF,  p-value: 4.251e-14
+
+                  2.5 %       97.5 %
+(Intercept)  1.40266927  1.922174257
+cavol        0.06429967  0.140692658
+svi          0.61390789  2.047890928
+cavolsviint -0.10891743 -0.003965825
+
+Call:
+lm(formula = lpsa ~ wt + svi + wtsviint, data = psaclean2)
+
+Coefficients:
+(Intercept)           wt          svi     wtsviint  
+     1.1749       0.0240       2.5132      -0.0234  
+
+
+Call:
+lm(formula = lpsa ~ wt + svi + wtsviint, data = psaclean2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.99901 -0.54503  0.00687  0.58774  1.86014 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  1.17494    0.23348   5.032 2.39e-06 ***
+wt           0.02400    0.00524   4.580 1.45e-05 ***
+svi          2.51315    0.57631   4.361 3.38e-05 ***
+wtsviint    -0.02340    0.01204  -1.943    0.055 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.8763 on 92 degrees of freedom
+Multiple R-squared:  0.446,	Adjusted R-squared:  0.428 
+F-statistic: 24.69 on 3 and 92 DF,  p-value: 8.267e-12
+
+                  2.5 %       97.5 %
+(Intercept)  0.71122821 1.6386528347
+wt           0.01359444 0.0344103012
+svi          1.36855861 3.6577449715
+wtsviint    -0.04731964 0.0005139517
